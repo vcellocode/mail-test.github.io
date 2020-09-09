@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <form name="sendMail" id="sendMailForm">
+		<div class="form-group user-name">
+			<label for="name" class="sr-only">Name</label>
+			<!-- "id" for taking name -->
+			<input type="text" class="form-control" required="" id="name" placeholder="First Name">
+		</div>
+		<div class="form-group user-email">
+			<label for="email" class="sr-only">Email</label>
+			<!-- "id" for taking email -->
+			<input type="email" class="form-control" required="" id="email" placeholder="Email Address">
+		</div>
+		<div class="form-group user-phone">
+			<label for="contactNumber" class="sr-only">Contact Number</label>
+			<!-- "id" for taking contact number -->
+			<input type="text" class="form-control" required="" id="contactNumber" placeholder="Phone">
+		</div>
+		<div class="form-group user-message">
+			<label for="message" class="sr-only">Message</label>
+			<!-- "id" for taking message -->
+			<textarea class="form-control" required="" id="message" placeholder="Write Message"></textarea>
+		</div>
+	<!-- Notifications for 'error' Or 'successfully'-->
+		<div class="col-md-12 mailResponse" style="display:none;">
+			<div class="alert alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<p class="mailResponseText"></p>
+			</div>
+		</div>
+	<!-- submit button -->
+	<button type="submit" class="btn btn-primary">Send Message <i class="fa fa-paper-plane"></i></button>
+</form>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
